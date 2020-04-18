@@ -15,6 +15,9 @@ body {
         background-color: rgb(212, 212, 212);
 }
 
+a {
+        color: #17A2B8;
+}
 .socialicon {
         width: 30px;
         margin: 5px;
@@ -22,7 +25,7 @@ body {
 
 
 .socialicon:hover{
-        background:#5c9bc5;
+        background:rgb(11, 97, 110);
 }
 
 .name {
