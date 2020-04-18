@@ -21,8 +21,8 @@ body {
 }
 
 
-socialicon:hover{
-        background:#0000ff;
+.socialicon:hover{
+        background:#5ba5c2;
 }
 
 .name {
