@@ -1,0 +1,77 @@
+.profile {
+        padding: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        max-width:700px;
+}
+
+h1 {
+        text-align: center;
+}
+
+body {
+        background-color: rgb(212, 212, 212);
+}
+
+.socialicon {
+        width: 30px;
+        margin: 5px;
+}
+
+.name {
+        text-align: center;
+        display:inline-block;
+        float: none;
+}
+
+.desc {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: large;
+        text-align: center;
+        position:absolute
+}
+
+
+/* relevant styles */
+.imgwrap {
+        position: relative;
+}
+      
+.imgdesc {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: rgb(255, 255, 255);
+        visibility: hidden;
+        opacity: 0;
+        /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+        text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+}
+
+.imgwrap:hover .imgdesc {
+        visibility: visible;
+        opacity: 1;
+}
+
+
+
+.box{
+        display: none;
+        width: 100%;
+    }
+    
+a:hover + .box,.box:hover{
+        display: block;
+        position: relative;
+        z-index: 100;
+}
