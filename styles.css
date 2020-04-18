@@ -9,10 +9,11 @@
 
 h1 {
         text-align: center;
+        margin: 3%;
 }
 
 body {
-        background-color: rgb(212, 212, 212);
+        background-color: rgb(236, 236, 236);
 }
 
 a {
@@ -25,7 +26,7 @@ a {
 
 
 .socialicon:hover{
-        background:rgb(11, 97, 110);
+        background:rgb(33, 225, 255);
 }
 
 .name {
@@ -82,4 +83,19 @@ a:hover + .box,.box:hover{
         display: block;
         position: relative;
         z-index: 100;
+}
+
+#emailp {
+        text-align: center;
+}
+
+h2 {
+        text-align: center;
+        margin: 3%;
+}
+
+hr.rounded {
+        border-top: 8px solid #bbb;
+        border-radius: 5px;
+        margin: 2%
 }
