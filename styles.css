@@ -20,6 +20,11 @@ body {
         margin: 5px;
 }
 
+
+.socialicon:hover{
+        background:#0000ff;
+}
+
 .name {
         text-align: center;
         display:inline-block;
