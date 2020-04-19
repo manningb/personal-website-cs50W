@@ -26,7 +26,7 @@ a {
 
 
 .socialicon:hover{
-        background:rgb(33, 225, 255);
+        background:rgba(33, 225, 255, 0.486);
 }
 
 .name {
