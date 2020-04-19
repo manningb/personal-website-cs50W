@@ -167,6 +167,7 @@ padding: 2px 16px;
         -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
         background-color: white;
+        /* overflow: auto; */
       }
       .timeline > li > .timeline-panel:before {
         position: absolute;
@@ -249,3 +250,11 @@ padding: 2px 16px;
       .timeline-body > p + p {
         margin-top: 5px;
       }
+      .timeline-body > img {
+              
+      }
+
+.certimage {
+        width:100%;
+        padding: 5%;
+}
