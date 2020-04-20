@@ -1,0 +1,291 @@
+.profile {
+        padding: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        max-width:700px;
+}
+
+h1 {
+        text-align: center;
+        margin: 3%;
+}
+
+body {
+        background-color: rgb(236, 236, 236);
+}
+
+a {
+        color: #17A2B8;
+}
+.socialicon {
+        width: 30px;
+        margin: 5px;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  vertical-align:middle;
+  font-size: 10px !important;
+  
+
+}
+
+
+.socialicon:hover{
+        background:rgba(33, 225, 255, 0.486);
+}
+
+.name {
+        text-align: center;
+        display:inline-block;
+        float: none;
+}
+
+.desc {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: large;
+        text-align: center;
+        position:absolute
+}
+
+
+/* relevant styles */
+.imgwrap {
+        position: relative;
+}
+      
+.imgdesc {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: rgb(255, 255, 255);
+        visibility: hidden;
+        opacity: 0;
+        /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+        text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+}
+
+.imgwrap:hover .imgdesc {
+        visibility: visible;
+        opacity: 1;
+}
+
+
+
+.box{
+        display: none;
+        width: 100%;
+    }
+    
+a:hover + .box,.box:hover{
+        display: block;
+        position: relative;
+        z-index: 100;
+}
+
+#emailp {
+        text-align: center;
+}
+
+h2 {
+        text-align: center;
+        margin: 3%;
+}
+
+hr.rounded {
+        border-top: 8px solid #bbb;
+        border-radius: 5px;
+        margin: 5%
+}
+
+.card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+}
+      
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+padding: 2px 16px;
+}
+
+
+
+
+.timeline {
+        list-style: none;
+        padding: 20px 0 20px;
+        position: relative;
+      }
+      .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #381919;
+        left: 50%;
+        margin-left: -1.5px;
+      }
+      .timeline > li {
+        margin-bottom: 20px;
+        position: relative;
+      }
+      .timeline > li:before,
+      .timeline > li:after {
+        content: " ";
+        display: table;
+      }
+      .timeline > li:after {
+        clear: both;
+      }
+      .timeline > li:before,
+      .timeline > li:after {
+        content: " ";
+        display: table;
+      }
+      .timeline > li:after {
+        clear: both;
+      }
+      .timeline > li > .timeline-panel {
+        width: 46%;
+        float: left;
+        border: 1px solid #d4d4d4;
+        border-radius: 2px;
+        padding: 20px;
+        position: relative;
+        -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        background-color: white;
+        /* overflow: auto; */
+      }
+      .timeline > li > .timeline-panel:before {
+        position: absolute;
+        top: 26px;
+        right: -15px;
+        display: inline-block;
+        border-top: 15px        solid transparent;
+        border-left: 15px solid #ccc;
+        border-right: 0 solid #ccc;
+        border-bottom: 15px solid transparent;
+        content: " ";
+      }
+      .timeline > li > .timeline-panel:after {
+        position: absolute;
+        top: 27px;
+        right: -14px;
+        display: inline-block;
+        border-top: 14px solid transparent;
+        border-left: 14px solid #fff;
+        border-right: 0 solid #fff;
+        border-bottom: 14px solid transparent;
+        content: " ";
+      }
+      .timeline > li > .timeline-badge {
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        text-align: center;
+        position: absolute;
+        top: 16px;
+        left: 50%;
+        margin-left: -25px;
+        background-color: #999999;
+        z-index: 100;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+      }
+      .timeline > li.timeline-inverted > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+      }
+      .timeline > li.timeline-inverted > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+      }
+      .timeline-badge.primary {
+        background-color: #2e6da4 !important;
+      }
+      .timeline-badge.success {
+        background-color: #3f903f !important;
+      }
+      .timeline-badge.warning {
+        background-color: #f0ad4e !important;
+      }
+      .timeline-badge.danger {
+        background-color: #d9534f !important;
+      }
+      .timeline-badge.info {
+        background-color: #5bc0de !important;
+      }
+      .timeline-title {
+        margin-top: 0;
+        color: inherit;
+      }
+      .timeline-body > p,
+      .timeline-body > ul {
+        margin-bottom: 0;
+      }
+      .timeline-body > p + p {
+        margin-top: 5px;
+      }
+      .timeline-body > img {
+              
+      }
+
+.certimage {
+        width:100%;
+        padding: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.dark-mode {
+  background-color: rgb(58, 58, 58);
+  color: white;
+}
+
+.dark-mode-projects {
+  background-color: rgb(58, 58, 58);
+  h1, h2 {
+    color:white;
+  }
+}
+
+.darkmode {
+  cursor:pointer
+}
