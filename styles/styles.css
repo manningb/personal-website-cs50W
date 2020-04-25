@@ -6,30 +6,49 @@
   padding-top: 10%;
 }
 
-h1 {
-  text-align: center;
-  margin: 3%;
-}
-
 body {
   background-color: #ececec;
 }
 
-a {
-  color: #17A2B8;
+body h1,
+body h2 {
+  margin: 3%;
 }
 
-.socialicon {
+body hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  margin: 5%;
+}
+
+body a {
+  color: #17a2b8;
+}
+
+body a:hover + .box,
+body .box:hover {
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+body table,
+body th,
+body td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.navbar .socialicon {
   width: 30px;
   margin: 5px;
 }
 
-.socialicon:hover {
+.navbar .socialicon:hover {
   background: rgba(33, 225, 255, 0.486);
 }
 
-.name {
-  text-align: center;
+.navbar .name {
   display: inline-block;
   float: none;
 }
@@ -39,16 +58,13 @@ a {
   margin-right: 10%;
   margin-top: 5%;
   font-size: large;
-  text-align: center;
 }
 
-/* relevant styles */
 .imgwrap {
   position: relative;
 }
 
 .imgdesc {
-  text-align: center;
   position: absolute;
   top: 50%;
   bottom: 0;
@@ -58,10 +74,10 @@ a {
   visibility: hidden;
   opacity: 0;
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
   /* transition effect. not necessary */
-  -webkit-transition: opacity .2s, visibility .2s;
-  transition: opacity .2s, visibility .2s;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .imgwrap:hover .imgdesc {
@@ -74,25 +90,9 @@ a {
   width: 100%;
 }
 
-a:hover + .box, .box:hover {
-  display: block;
-  position: relative;
-  z-index: 100;
-}
-
-#emailp {
+#emailp, .leavingcert, body h1,
+body h2, .navbar .name, .desc, .imgdesc, .contact {
   text-align: center;
-}
-
-h2 {
-  text-align: center;
-  margin: 3%;
-}
-
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-  margin: 5%;
 }
 
 .card {
@@ -115,6 +115,12 @@ hr.rounded {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+}
+
+@media only screen and (min-height: 600px) {
+  .parent {
+    padding: 10% 0;
+  }
 }
 
 @media only screen and (min-width: 988px) {
@@ -146,7 +152,6 @@ hr.rounded {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -160,7 +165,13 @@ hr.rounded {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     vertical-align: middle;
-    padding: 10% 0;
   }
+}
+
+.contact {
+  margin: auto;
+  margin-top: 10%;
+  padding: 10px;
+  margin-bottom: 20%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,157 +1,165 @@
-$color-link: #17A2B8;
+$color-link: #17a2b8;
 $icon-hover: rgba(33, 225, 255, 0.486);
-.profile {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width:300px;
-        padding-top: 10%;
-}
+$color-bg: rgb(236, 236, 236);
 
-h1 {
-        text-align: center;
-        margin: 3%;
+.profile {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+	padding-top: 10%;
 }
 
 body {
-        background-color: rgb(236, 236, 236);
+	background-color: $color-bg;
+	h1,
+	h2 {
+                @extend .leavingcert;
+		margin: 3%;
+	}
+	hr.rounded {
+		border-top: 8px solid #bbb;
+		border-radius: 5px;
+		margin: 5%;
+	}
+	a {
+		color: $color-link;
+	}
+	a:hover + .box,
+	.box:hover {
+		display: block;
+		position: relative;
+		z-index: 100;
+	}
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		padding: 5px;
+	}
 }
 
-a {
-        color: $color-link;
-}
-.socialicon {
-        width: 30px;
-        margin: 5px;
-}
 
-
-.socialicon:hover{
-        background:$icon-hover;
-}
-
-.name {
-        text-align: center;
-        display:inline-block;
-        float: none;
+.navbar {
+        .socialicon {
+                width: 30px;
+                margin: 5px;
+        }
+        
+        .socialicon:hover {
+                background: $icon-hover;
+        }
+        .name {
+                @extend .leavingcert;
+                display: inline-block;
+                float: none;
+        }
+        
 }
 
 .desc {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 5%;
-        font-size: large;
-        text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	font-size: large;
+	@extend .leavingcert;
 }
 
-
-/* relevant styles */
 .imgwrap {
-        position: relative;
+	position: relative;
 }
-      
-.imgdesc {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        color: rgb(255, 255, 255);
-        visibility: hidden;
-        opacity: 0;
-        /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-        text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
-             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
 
-        /* transition effect. not necessary */
-        transition: opacity .2s, visibility .2s;
+.imgdesc {
+	@extend .leavingcert;
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: rgb(255, 255, 255);
+	visibility: hidden;
+	opacity: 0;
+	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+	text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+		#000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+
+	/* transition effect. not necessary */
+	transition: opacity 0.2s, visibility 0.2s;
 }
 
 .imgwrap:hover .imgdesc {
-        visibility: visible;
-        opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
-
-.box{
-        display: none;
-        width: 100%;
-    }
-    
-a:hover + .box,.box:hover{
-        display: block;
-        position: relative;
-        z-index: 100;
+.box {
+	display: none;
+	width: 100%;
 }
 
-#emailp {
-        text-align: center;
-}
-
-h2 {
-        text-align: center;
-        margin: 3%;
-}
-
-hr.rounded {
-        border-top: 8px solid #bbb;
-        border-radius: 5px;
-        margin: 5%
+#emailp, .leavingcert {
+	text-align: center;
 }
 
 .card {
-        /* Add shadows to create the "card" effect */
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        margin-top: 5%;
-        margin-left: 5%;
-        margin-right: 5%;
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
-      
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Add some padding inside the card container */
 .container {
-padding: 2px 16px;
+	padding: 2px 16px;
+}
+@media only screen and (min-height: 600px) {
+        .parent {
+		padding: 10% 0;
+        }
 }
 
 @media only screen and (min-width: 988px) {
-  .contact {
-    h1 {
-      font-size: 250%;
-    }
-    h2 {
-      font-size: 200%;
-    }
-    p {
-      font-size: 150%;
-    }
-  }
-  .indexcontainer {
+	.contact {
+		h1 {
+			font-size: 250%;
+		}
+		h2 {
+			font-size: 200%;
+		}
+		p {
+			font-size: 150%;
+		}
+	}
+	.indexcontainer {
+		flex: 1 0 100px;
+		justify-content: center;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 
-    flex: 1 0 100px;  
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  
-  }
-  
-    .parent {
-      display:flex;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      vertical-align: middle;
-      padding: 10% 0;
-
-    }
+	.parent {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+                vertical-align: middle;
+	}
 }
 
+.contact {
+	@extend .leavingcert;
+	margin: auto;
+	margin-top: 10%;
+	padding: 10px;
+	margin-bottom: 20%;
+}
