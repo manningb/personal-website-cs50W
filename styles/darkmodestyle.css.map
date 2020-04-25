@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAkBA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,cAAc,EAAC,MAAM;EACrB,SAAS,EAAE,eAAe;CAC3B",
+    "sources": [
+        "darkmodestyle.scss"
+    ],
+    "names": [],
+    "file": "darkmodestyle.css"
+}
